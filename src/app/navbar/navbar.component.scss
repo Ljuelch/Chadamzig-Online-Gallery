@@ -1,0 +1,24 @@
+nav {
+  background-color: #ffff;
+}
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: currentColor;
+  transition: width 0.4s ease-in-out;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+

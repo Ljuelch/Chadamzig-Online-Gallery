@@ -1,0 +1,65 @@
+<nav class="w-full bg-transparent py-4">
+  <div class="flex items-center justify-between px-36">
+    <!-- Left Section (Search Icon) -->
+    <div class="flex justify-start flex-grow-0 ml-auto">
+      <a href="#" class="text-base tracking-wider-custom"  (click)="onSearchClick()">
+        <fa-icon [icon]="faSearch"></fa-icon>
+      </a>
+    </div>
+
+    <!-- Middle Section (Navbar Items and Logo) -->
+    <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 flex-grow">
+      <ul class="flex space-x-4 md:space-x-6 text-base tracking-wider-custom">
+        <li>
+          <a href="/originals" class="uppercase font-bold tracking-wider-custom relative underline-hover">
+            Originals
+          </a>
+        </li>
+        <li>
+          <a href="/home-decor" class="uppercase font-bold tracking-wider-custom relative underline-hover">
+            Home Decor
+          </a>
+        </li>
+        <li>
+          <a href="/prints" class="uppercase font-bold tracking-wider-custom relative underline-hover">
+            Prints
+          </a>
+        </li>
+      </ul>
+
+      <a href="/" class="navbar-brand">
+        <img src="assets/lottelogo.svg" alt="Logo" class="w-12 h-auto">
+      </a>
+
+      <ul class="flex space-x-4 md:space-x-6 text-base tracking-wider-custom">
+        <li>
+          <a href="/art-book" class="uppercase font-bold tracking-wider-custom relative underline-hover">
+            Art Book
+          </a>
+        </li>
+        <li>
+          <a href="/commissions" class="uppercase font-bold tracking-wider-custom relative underline-hover">
+            Commissions
+          </a>
+        </li>
+        <li>
+          <a href="/about" class="uppercase font-bold tracking-wider-custom relative underline-hover">
+            About
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Right Section (Shopping Cart Icon) -->
+    <div class="flex justify-end flex-grow-0 mr-auto">
+      <a href="#" class="text-base tracking-wider-custom">
+        <fa-icon [icon]="faUser"></fa-icon>
+      </a>
+      <a href="#" class="text-base pl-3 tracking-wider-custom">
+        <fa-icon [icon]="faShoppingCart"></fa-icon>
+      </a>
+    </div>
+
+    <app-search *ngIf="showSearch" (closeSearch)="closeSearch()"></app-search>
+  </div>
+</nav>

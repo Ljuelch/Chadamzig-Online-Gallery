@@ -1,0 +1,23 @@
+<div class="fixed top-0 left-0 w-full h-full z-50 flex justify-center search-box">
+  <div class="w-1/2 search-bar-helper relative">
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute search-icon-helper text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+
+    <button
+      class="absolute focus:outline-none close-icon-helper"
+    >
+      X
+    </button>
+
+    <!-- Wrapper for the input and icons -->
+    <input
+      type="text"
+      placeholder="Search..."
+      class="w-full p-4 pr-20 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-300 focus:border-gray-500 bg-white"
+      (click)="$event.stopPropagation()"
+    />
+  </div>
+</div>
+
