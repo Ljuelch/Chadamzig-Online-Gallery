@@ -1,0 +1,16 @@
+<div class="carousel js-flickity w-full" #carousel>
+  <div class="carousel-cell w-full relative" *ngFor="let slide of slides">
+    <img
+      class="w-full h-full object-cover"
+      [src]="slide.image"
+      [alt]="slide.title"
+    />
+    <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white">
+      <h2 class="text-4xl md:text-6xl font-bold">{{ slide.title }}</h2>
+      <p *ngIf="slide.description" class="mt-2 text-lg md:text-2xl">{{ slide.description }}</p>
+      <a [href]="slide.link" class="btn mt-4 bg-pink-200 text-black py-2 px-4 rounded-lg">
+        {{ slide.title === 'Releasing Dreams' ? 'Available Originals' : 'Shop Home Decor' }}
+      </a>
+    </div>
+  </div>
+</div>
