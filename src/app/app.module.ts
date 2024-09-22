@@ -7,13 +7,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SearchComponent } from './search/search.component';
 import { SliderComponent } from './slider/slider.component';
+import { ArtworkShowcaseComponent } from './artwork-showcase/artwork-showcase.component';
+import { ShopByCollectionCardsComponent } from './shop-by-collection-cards/shop-by-collection-cards.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SearchComponent,
-    SliderComponent
+    SliderComponent,
+    ArtworkShowcaseComponent,
+    ShopByCollectionCardsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,29 @@
+<div class="container mx-auto flex flex-col md:flex-row items-center justify-center p-8  pt-24">
+  <!-- Text Section -->
+  <div class="text-section max-w-md pr-0 md:pr-12 mb-8 md:mb-0 text-center md:text-left">
+    <div class="subheading text-lg uppercase tracking-widest text-gray-500 mb-2">
+      {{ subheading }}
+    </div>
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">{{ heading }}</h2>
+    <p class="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+      {{ description }}
+    </p>
+    <a
+      href="#"
+      class="btn inline-block bg-pink-300 text-white py-2 px-6 rounded-full hover:bg-pink-400 transition-colors"
+    >
+      {{ buttonText }}
+    </a>
+  </div>
+
+  <!-- Image Section -->
+  <div class="image-section w-full md:w-1/2 lg:w-1/2 md:pl-12">
+    <div class="aspect-w-1 aspect-h-1">
+      <img
+        [src]="imageUrl"
+        alt="Golden Dance Painting"
+        class="rounded-lg shadow-lg object-cover w-full h-full hover:scale-105 transition-transform duration-300"
+      />
+    </div>
+  </div>
+</div>
