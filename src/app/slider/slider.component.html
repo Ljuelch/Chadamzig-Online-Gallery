@@ -6,10 +6,11 @@
       [alt]="slide.title"
     />
     <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white">
-      <h2 class="text-4xl md:text-6xl font-bold">{{ slide.title }}</h2>
+      <h2 class="text-4xl md:text-6xl font-bold" style="font-size: 80px; font-family: 'Tenor Sans', sans-serif;">{{ slide.title }}</h2>
       <p *ngIf="slide.description" class="mt-2 text-lg md:text-2xl">{{ slide.description }}</p>
-      <a [href]="slide.link" class="btn mt-4 bg-pink-200 text-black py-2 px-4 rounded-lg">
-        {{ slide.title === 'Releasing Dreams' ? 'Available Originals' : 'Shop Home Decor' }}
+      <a [href]="slide.link" class="mt-4 btn inline-block bg-[#dec3c3] text-black py-2 px-6 rounded-md hover:bg-[#cda9a9] transition-colors"
+         style="letter-spacing: 0.3em; font-weight: bold; font-size: 14px">
+        {{ slide.title === 'RELEASING DREAMS' ? 'AVAILABLE ORIGINALS' : 'SHOP PRINTS' }}
       </a>
     </div>
   </div>

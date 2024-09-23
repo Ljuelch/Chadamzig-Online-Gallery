@@ -13,13 +13,13 @@ export class SliderComponent implements AfterViewInit {
   slides = [
     {
       image: 'assets/paintings/oilSample1.jpg',
-      title: 'Releasing Dreams',
+      title: 'RELEASING DREAMS',
       description: 'Unfolding a realm of possibilities',
       link: 'https://example.com/originals'
     },
     {
       image: 'assets/paintings/oilSample2.jpg',
-      title: 'Beauty for Every Space',
+      title: 'BEAUTY FOR EVERY SPACE',
       description: '',
       link: 'https://example.com/home-decor'
     }

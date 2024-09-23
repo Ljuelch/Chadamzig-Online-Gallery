@@ -8,23 +8,23 @@ import { Component } from '@angular/core';
 export class ShopByCollectionCardsComponent {
   collections = [
     {
-      name: 'The Golden Dance',
-      image: 'assets/paintings/oilSample2.jpg', // Update with correct image path
+      name: 'THE GOLDEN DANCE',
+      image: 'assets/paintings/oilSample4.jpg', // Update with correct image path
       link: '/collections/the-golden-dance'
     },
     {
-      name: 'Originals',
-      image: 'assets/paintings/oilSample2.jpg', // Update with correct image path
+      name: 'ORIGINALS',
+      image: 'assets/paintings/oilSample5.jpg', // Update with correct image path
       link: '/collections/originals'
     },
     {
-      name: 'Books',
-      image: 'assets/paintings/oilSample2.jpg', // Update with correct image path
+      name: 'BOOKS',
+      image: 'assets/paintings/oilSample6.jpg', // Update with correct image path
       link: '/collections/books'
     },
     {
-      name: 'Mystery Dream Paintings',
-      image: 'assets/paintings/oilSample2.jpg', // Update with correct image path
+      name: 'PUZZLES',
+      image: 'assets/paintings/oilSample7.jpg', // Update with correct image path
       link: '/collections/mystery-dream-paintings'
     }
   ];

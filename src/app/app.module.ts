@@ -10,6 +10,8 @@ import { SliderComponent } from './slider/slider.component';
 import { ArtworkShowcaseComponent } from './artwork-showcase/artwork-showcase.component';
 import { ShopByCollectionCardsComponent } from './shop-by-collection-cards/shop-by-collection-cards.component';
 import { FooterComponent } from './footer/footer.component';
+import { BodyComponent } from './body/body.component';
+import { OriginalsComponent } from './originals/originals.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FooterComponent } from './footer/footer.component';
     SliderComponent,
     ArtworkShowcaseComponent,
     ShopByCollectionCardsComponent,
-    FooterComponent
+    FooterComponent,
+    BodyComponent,
+    OriginalsComponent
   ],
   imports: [
     BrowserModule,
