@@ -12,6 +12,8 @@ import { ShopByCollectionCardsComponent } from './shop-by-collection-cards/shop-
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { OriginalsComponent } from './originals/originals.component';
+import { HeroHeaderComponent } from './hero-header/hero-header.component';
+import { FilterSectionComponent } from './filter-section/filter-section.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { OriginalsComponent } from './originals/originals.component';
     ShopByCollectionCardsComponent,
     FooterComponent,
     BodyComponent,
-    OriginalsComponent
+    OriginalsComponent,
+    HeroHeaderComponent,
+    FilterSectionComponent
   ],
   imports: [
     BrowserModule,
