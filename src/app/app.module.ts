@@ -9,6 +9,7 @@ import { SearchComponent } from './search/search.component';
 import { SliderComponent } from './slider/slider.component';
 import { ArtworkShowcaseComponent } from './artwork-showcase/artwork-showcase.component';
 import { ShopByCollectionCardsComponent } from './shop-by-collection-cards/shop-by-collection-cards.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ShopByCollectionCardsComponent } from './shop-by-collection-cards/shop-
     SearchComponent,
     SliderComponent,
     ArtworkShowcaseComponent,
-    ShopByCollectionCardsComponent
+    ShopByCollectionCardsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
