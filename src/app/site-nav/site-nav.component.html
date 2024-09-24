@@ -1,0 +1,72 @@
+<!-- Overlay when nav is open -->
+<div *ngIf="isNavOpen" class="fixed inset-0 bg-gray-200 bg-opacity-80 z-40 transition-opacity" (click)="closeNav()"></div>
+
+<!-- Side nav panel -->
+<div [class.open]="isNavOpen" class="side-nav fixed top-0 left-0 h-full bg-white z-50 transform -translate-x-full transition-transform duration-300">
+  <div class="p-4">
+    <!-- Flex container for Filter title and Close button in the same row -->
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-bold" style="font-size: 30.6px; font-family: 'Tenor Sans', sans-serif;">FILTER</h2>
+      <button (click)="closeNav()" class="text-xl">X</button>
+    </div>
+
+    <!-- Separator line -->
+    <div class="border-b border-gray-300 mb-4"></div>
+
+    <!-- Collapsible Availability Section -->
+    <div class="mb-4">
+      <button type="button" style="letter-spacing: .3em; font-size: 14.4px" class="flex justify-between items-center w-full py-2 px-4 text-lg font-semibold text-left focus:outline-none" (click)="toggleSection('availability')" aria-expanded="true">
+        Availability
+        <span class="ml-2 transform transition-transform duration-200" [class.rotate-180]="isAvailabilityOpen">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="h-4 w-4" viewBox="0 0 28 16">
+        <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"></path>
+      </svg>
+    </span>
+      </button>
+
+      <ul *ngIf="isAvailabilityOpen" class="pl-6 mt-2 space-y-2" style="font-size: 18px; font-weight: 600">
+        <li>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox">
+            <span class="ml-2">In stock</span>
+          </label>
+        </li>
+        <li>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox">
+            <span class="ml-2">Out of stock</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-b border-gray-300 mb-4"></div>
+
+    <div class="mb-4">
+      <button type="button" style="letter-spacing: .3em; font-size: 14.4px" class="flex justify-between items-center w-full py-2 px-4 text-lg font-semibold text-left focus:outline-none" (click)="toggleSection('availability')" aria-expanded="true">
+        PRODUCT TYPE
+        <span class="ml-2 transform transition-transform duration-200" [class.rotate-180]="isAvailabilityOpen">
+      <svg aria-hidden="true" focusable="false" role="presentation" class="h-4 w-4" viewBox="0 0 28 16">
+        <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"></path>
+      </svg>
+    </span>
+      </button>
+
+
+
+      <ul *ngIf="isProductTypeOpen" class="pl-6 mt-2 space-y-2" style="font-size: 18px; font-weight: 600">
+        <li>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox">
+            <span class="ml-2">In stock</span>
+          </label>
+        </li>
+        <li>
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox">
+            <span class="ml-2">Out of stock</span>
+          </label>
+        </li>
+      </ul>
+    </div>
+</div>

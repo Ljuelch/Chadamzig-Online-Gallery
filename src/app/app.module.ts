@@ -17,6 +17,7 @@ import { FilterSectionComponent } from './filter-section/filter-section.componen
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {NgOptimizedImage} from "@angular/common";
+import { SiteNavComponent } from './site-nav/site-nav.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {NgOptimizedImage} from "@angular/common";
     OriginalsComponent,
     HeroHeaderComponent,
     FilterSectionComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    SiteNavComponent
   ],
   imports: [
     BrowserModule,

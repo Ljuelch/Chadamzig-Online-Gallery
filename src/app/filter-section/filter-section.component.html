@@ -1,6 +1,6 @@
 <div class="flex justify-between items-center mb-6">
 
-  <button class="bg-gray-100 text-gray-700 px-4 py-2 rounded-md flex items-center text-center">
+  <button (click)="siteNav.openNav()" class="bg-gray-100 text-gray-700 px-4 py-2 rounded-md flex items-center text-center">
     Filter
   </button>
 
@@ -24,3 +24,5 @@
     </div>
   </div>
 </div>
+
+<app-site-nav #siteNav></app-site-nav>
