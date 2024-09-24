@@ -1,19 +1,14 @@
-<!-- Overlay when nav is open -->
 <div *ngIf="isNavOpen" class="fixed inset-0 bg-gray-200 bg-opacity-80 z-40 transition-opacity" (click)="closeNav()"></div>
 
-<!-- Side nav panel -->
 <div [class.open]="isNavOpen" class="side-nav fixed top-0 left-0 h-full bg-white z-50 transform -translate-x-full transition-transform duration-300">
   <div class="p-4">
-    <!-- Flex container for Filter title and Close button in the same row -->
     <div class="flex justify-between items-center mb-4">
       <h2 class="text-lg font-bold" style="font-size: 30.6px; font-family: 'Tenor Sans', sans-serif;">FILTER</h2>
       <button (click)="closeNav()" class="text-xl">X</button>
     </div>
 
-    <!-- Separator line -->
     <div class="border-b border-gray-300 mb-4"></div>
 
-    <!-- Collapsible Availability Section -->
     <div class="mb-4">
       <button type="button" style="letter-spacing: .3em; font-size: 14.4px" class="flex justify-between items-center w-full py-2 px-4 text-lg font-semibold text-left focus:outline-none" (click)="toggleSection('availability')" aria-expanded="true">
         Availability
@@ -69,4 +64,5 @@
         </li>
       </ul>
     </div>
+  </div>
 </div>

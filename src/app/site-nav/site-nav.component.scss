@@ -1,14 +1,12 @@
 .side-nav {
-  width: 350px; /* Set width to 350px */
+  width: 350px;
   transition: transform 0.3s ease-in-out;
 }
 
-/* When the side-nav is open */
 .side-nav.open {
-  transform: translateX(0); /* Slide-in effect */
+  transform: translateX(0);
 }
 
-/* Rotate down arrow on click */
 .rotate-180 {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
