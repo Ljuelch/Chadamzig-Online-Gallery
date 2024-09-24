@@ -1,0 +1,32 @@
+<div class="newsletter-container flex flex-col md:flex-row margin-helper items-center p-8 mt-20 mb-32 mx-4 md:mx-auto">
+  <!-- Left section: Image -->
+  <div class="newsletter-image w-full md:w-1/2 mb-6 md:mb-0">
+    <img [src]="imageSrc" alt="Newsletter" class="w-full h-auto rounded-lg object-cover">
+  </div>
+
+  <!-- Right section: Form -->
+  <div class="newsletter-form w-full md:w-1/2 md:pl-8">
+    <h2 class="mb-2" style="font-family: 'Tenor Sans', sans-serif; font-size: 30.6px;">DO YOU LIKE WHAT I DO?</h2>
+    <p class="mb-4" style="font-size: 18px; font-weight: 600">Step into a world of possibilities in the weekly newsletter that comes straight from my studio to your inbox..</p>
+
+    <form [formGroup]="newsletterForm" (ngSubmit)="onSubmit()" class="flex flex-col space-y-4">
+      <div class="formkit-field">
+        <input formControlName="firstName" type="text" placeholder="First Name" aria-label="First Name"
+               class="formkit-input w-full border border-gray-300 rounded-md p-2 text-black placeholder-gray-500" required>
+      </div>
+      <div class="formkit-field">
+        <input formControlName="lastName" type="text" placeholder="Last Name" aria-label="Last Name"
+               class="formkit-input w-full border border-gray-300 rounded-md p-2 text-black placeholder-gray-500" required>
+      </div>
+      <div class="formkit-field">
+        <input formControlName="email" type="email" placeholder="Email Address" aria-label="Email Address"
+               class="formkit-input w-full border border-gray-300 rounded-md p-2 text-black placeholder-gray-500" [class.border-red-500]="email?.invalid && email?.touched" required>
+        <div *ngIf="email?.invalid && email?.touched" class="text-red-500 text-sm">Please enter a valid email.</div>
+      </div>
+      <button type="submit" style="background-color: #8e3857;" class="formkit-submit w-full cursor-pointer text-white rounded-md py-2 font-medium hover:bg-red-700 transition"
+              [disabled]="newsletterForm.invalid">
+        Join the Dreamer's Community
+      </button>
+    </form>
+  </div>
+</div>

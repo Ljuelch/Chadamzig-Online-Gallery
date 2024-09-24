@@ -14,6 +14,9 @@ import { BodyComponent } from './body/body.component';
 import { OriginalsComponent } from './originals/originals.component';
 import { HeroHeaderComponent } from './hero-header/hero-header.component';
 import { FilterSectionComponent } from './filter-section/filter-section.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -27,12 +30,15 @@ import { FilterSectionComponent } from './filter-section/filter-section.componen
     BodyComponent,
     OriginalsComponent,
     HeroHeaderComponent,
-    FilterSectionComponent
+    FilterSectionComponent,
+    NewsletterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    NgOptimizedImage
   ],
   providers: [
     provideClientHydration()
