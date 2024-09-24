@@ -1,7 +1,7 @@
 <nav class="w-full bg-transparent py-6">
   <div class="flex items-center justify-between px-36">
     <div class="flex justify-start flex-grow-0 ml-auto">
-      <a href="#" class="text-base tracking-wider-custom"  (click)="onSearchClick()">
+      <a class="cursor-pointer text-base tracking-wider-custom" (click)="onSearchClick()">
         <fa-icon [icon]="faSearch"></fa-icon>
       </a>
     </div>
@@ -55,7 +55,7 @@
       <a href="#" class="text-base tracking-wider-custom">
         <fa-icon [icon]="faUser"></fa-icon>
       </a>
-      <a href="#" class="text-base pl-3 tracking-wider-custom">
+      <a class="text-base pl-3 cursor-pointer tracking-wider-custom" (click)="cartNav.openCart()">
         <fa-icon [icon]="faShoppingCart"></fa-icon>
       </a>
     </div>
@@ -63,3 +63,4 @@
     <app-search *ngIf="showSearch" (closeSearch)="closeSearch()"></app-search>
   </div>
 </nav>
+<app-cart-nav #cartNav></app-cart-nav>

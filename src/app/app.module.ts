@@ -18,6 +18,7 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {NgOptimizedImage} from "@angular/common";
 import { SiteNavComponent } from './site-nav/site-nav.component';
+import { CartNavComponent } from './cart-nav/cart-nav.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SiteNavComponent } from './site-nav/site-nav.component';
     HeroHeaderComponent,
     FilterSectionComponent,
     NewsletterComponent,
-    SiteNavComponent
+    SiteNavComponent,
+    CartNavComponent
   ],
   imports: [
     BrowserModule,

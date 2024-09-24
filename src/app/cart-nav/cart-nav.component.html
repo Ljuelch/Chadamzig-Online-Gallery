@@ -1,0 +1,16 @@
+<!-- Shopping Cart Navbar -->
+<div *ngIf="isCartOpen" class="fixed inset-0 bg-gray-200 bg-opacity-80 z-40 transition-opacity" (click)="closeCart()"></div>
+
+<!-- Side cart panel -->
+<div [ngClass]="{'translate-x-0': isCartOpen, 'translate-x-full': !isCartOpen}" style="width: 350px;" class="side-cart fixed top-0 right-0 h-full bg-white z-50 transform transition-transform duration-300">
+  <div class="p-4">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-lg font-bold" style="font-size: 30.6px; font-family: 'Tenor Sans', sans-serif;">Cart</h2>
+      <button (click)="closeCart()" class="text-xl">X</button>
+    </div>
+
+    <div class="border-b border-gray-300 mb-4"></div>
+
+    <p class="text-gray-500">Your cart is currently empty.</p>
+  </div>
+</div>
