@@ -11,8 +11,7 @@ export class NewsletterComponent implements OnInit {
   imageSrc: string;
 
   constructor(private fb: FormBuilder) {
-    // Initialize the imageSrc with a default image or set dynamically
-    this.imageSrc = '../assets/paintings/oilSample1.jpg'; // Update this path as needed
+    this.imageSrc = '../assets/paintings/oilSample1.jpg';
   }
 
   ngOnInit(): void {
@@ -30,11 +29,10 @@ export class NewsletterComponent implements OnInit {
   onSubmit() {
     if (this.newsletterForm.valid) {
       console.log('Form Submitted', this.newsletterForm.value);
-      // Handle form submission logic here (e.g., send data to the backend)
+
     }
   }
 
-  // You can also create a method to dynamically change the image
   changeImage(newImageUrl: string) {
     this.imageSrc = newImageUrl;
   }
