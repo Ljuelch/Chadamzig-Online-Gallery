@@ -21,6 +21,7 @@ import { SiteNavComponent } from './site-nav/site-nav.component';
 import { CartNavComponent } from './cart-nav/cart-nav.component';
 import { PrintsComponent } from './prints/prints.component';
 import { SketchesComponent } from './sketches/sketches.component';
+import { CommissionsComponent } from './commissions/commissions.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SketchesComponent } from './sketches/sketches.component';
     SiteNavComponent,
     CartNavComponent,
     PrintsComponent,
-    SketchesComponent
+    SketchesComponent,
+    CommissionsComponent
   ],
   imports: [
     BrowserModule,

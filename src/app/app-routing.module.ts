@@ -4,11 +4,13 @@ import {OriginalsComponent} from "./originals/originals.component";
 import {BodyComponent} from "./body/body.component";
 import {PrintsComponent} from "./prints/prints.component";
 import {SketchesComponent} from "./sketches/sketches.component";
+import {CommissionsComponent} from "./commissions/commissions.component";
 
 const routes: Routes = [
   { path: 'originals', component: OriginalsComponent },
   { path: 'prints', component: PrintsComponent },
   { path: 'sketches', component: SketchesComponent },
+  { path: 'commissions', component: CommissionsComponent },
   { path: 'landing', component: BodyComponent },
   { path: '', component: BodyComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
