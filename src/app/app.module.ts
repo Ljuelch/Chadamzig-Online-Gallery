@@ -20,6 +20,7 @@ import {NgOptimizedImage} from "@angular/common";
 import { SiteNavComponent } from './site-nav/site-nav.component';
 import { CartNavComponent } from './cart-nav/cart-nav.component';
 import { PrintsComponent } from './prints/prints.component';
+import { SketchesComponent } from './sketches/sketches.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PrintsComponent } from './prints/prints.component';
     NewsletterComponent,
     SiteNavComponent,
     CartNavComponent,
-    PrintsComponent
+    PrintsComponent,
+    SketchesComponent
   ],
   imports: [
     BrowserModule,

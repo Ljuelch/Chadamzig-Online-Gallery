@@ -19,6 +19,12 @@ export class HeroHeaderComponent implements OnInit {
       title: 'PRINTS WILL BE COMING SOON',
       description: '',
       link: 'https://example.com/prints'
+    },
+    {
+      image: 'assets/paintings/oilSample4.jpg',
+      title: 'SKETCHES WILL BE COMING SOON',
+      description: '',
+      link: 'https://example.com/prints'
     }
   ];
 
@@ -40,8 +46,11 @@ export class HeroHeaderComponent implements OnInit {
     else if (route.includes('prints')) {
       this.currentSlide = this.slides[1];
     }
+    else if (route.includes('sketches')) {
+      this.currentSlide = this.slides[2];
+    }
      else {
-      this.currentSlide = this.slides[1];
+      this.currentSlide = this.slides[0];
     }
   }
 }
