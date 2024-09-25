@@ -19,6 +19,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {NgOptimizedImage} from "@angular/common";
 import { SiteNavComponent } from './site-nav/site-nav.component';
 import { CartNavComponent } from './cart-nav/cart-nav.component';
+import { PrintsComponent } from './prints/prints.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CartNavComponent } from './cart-nav/cart-nav.component';
     FilterSectionComponent,
     NewsletterComponent,
     SiteNavComponent,
-    CartNavComponent
+    CartNavComponent,
+    PrintsComponent
   ],
   imports: [
     BrowserModule,
