@@ -15,10 +15,10 @@ export class HeroHeaderComponent implements OnInit {
       link: 'https://example.com/originals'
     },
     {
-      image: 'assets/paintings/oilSample2.jpg',
-      title: 'BEAUTY FOR EVERY SPACE',
+      image: 'assets/paintings/oilSample5.jpg',
+      title: 'PRINTS WILL BE COMING SOON',
       description: '',
-      link: 'https://example.com/home-decor'
+      link: 'https://example.com/prints'
     }
   ];
 
@@ -36,7 +36,11 @@ export class HeroHeaderComponent implements OnInit {
   setSlideBasedOnRoute(route: string) {
     if (route.includes('originals')) {
       this.currentSlide = this.slides[0];
-    } else {
+    }
+    else if (route.includes('prints')) {
+      this.currentSlide = this.slides[1];
+    }
+     else {
       this.currentSlide = this.slides[1];
     }
   }
