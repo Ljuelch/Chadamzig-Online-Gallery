@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class SiteNavComponent {
   isNavOpen: boolean = false;
-  isAvailabilityOpen: boolean = true;  // For collapsing the availability section
-  isProductTypeOpen: boolean = true;   // For collapsing the product type section
+  isAvailabilityOpen: boolean = false;  // Initially closed
+  isProductTypeOpen: boolean = false;   // Initially closed
 
   openNav() {
     this.isNavOpen = true;

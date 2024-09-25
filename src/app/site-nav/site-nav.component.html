@@ -9,14 +9,18 @@
 
     <div class="border-b border-gray-300 mb-4"></div>
 
+    <!-- Availability Section -->
     <div class="mb-4">
-      <button type="button" style="letter-spacing: .3em; font-size: 14.4px" class="flex justify-between items-center w-full py-2 px-4 text-lg font-semibold text-left focus:outline-none" (click)="toggleSection('availability')" aria-expanded="true">
+      <button type="button" style="letter-spacing: .3em; font-size: 14.4px"
+              class="flex justify-between items-center w-full py-2 px-4 text-lg font-semibold text-left focus:outline-none"
+              (click)="toggleSection('availability')" aria-expanded="true">
         Availability
-        <span class="ml-2 transform transition-transform duration-200" [class.rotate-180]="isAvailabilityOpen">
-      <svg aria-hidden="true" focusable="false" role="presentation" class="h-4 w-4" viewBox="0 0 28 16">
-        <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"></path>
-      </svg>
-    </span>
+        <span class="ml-2 transform transition-transform duration-200"
+              [class.rotate-180]="isAvailabilityOpen">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="h-4 w-4" viewBox="0 0 28 16">
+            <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"></path>
+          </svg>
+        </span>
       </button>
 
       <ul *ngIf="isAvailabilityOpen" class="pl-6 mt-2 space-y-2" style="font-size: 18px; font-weight: 600">
@@ -37,14 +41,18 @@
 
     <div class="border-b border-gray-300 mb-4"></div>
 
+    <!-- Product Type Section -->
     <div class="mb-4">
-      <button type="button" style="letter-spacing: .3em; font-size: 14.4px" class="flex justify-between items-center w-full py-2 px-4 text-lg font-semibold text-left focus:outline-none" (click)="toggleSection('availability')" aria-expanded="true">
+      <button type="button" style="letter-spacing: .3em; font-size: 14.4px"
+              class="flex justify-between items-center w-full py-2 px-4 text-lg font-semibold text-left focus:outline-none"
+              (click)="toggleSection('productType')" aria-expanded="true">
         PRODUCT TYPE
-        <span class="ml-2 transform transition-transform duration-200" [class.rotate-180]="isAvailabilityOpen">
-      <svg aria-hidden="true" focusable="false" role="presentation" class="h-4 w-4" viewBox="0 0 28 16">
-        <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"></path>
-      </svg>
-    </span>
+        <span class="ml-2 transform transition-transform duration-200"
+              [class.rotate-180]="isProductTypeOpen">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="h-4 w-4" viewBox="0 0 28 16">
+            <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"></path>
+          </svg>
+        </span>
       </button>
 
       <ul *ngIf="isProductTypeOpen" class="pl-6 mt-2 space-y-2" style="font-size: 18px; font-weight: 600">
